@@ -26,3 +26,33 @@
   font-size: 2em;
   margin-bottom: 5px;
 }
+
+.wd-mobile-kanbas-navigation {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  width: 120px;
+  gap:10px;
+}
+.wd-mobile-kanbas-navigation li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+.wd-mobile-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+.wd-mobile-kanbas-navigation li.wd-active a {
+  color: red;
+}
+.wd-mobile-kanbas-navigation a {
+  color: black;
+  text-decoration: none;
+}
+.wd-mobile-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}

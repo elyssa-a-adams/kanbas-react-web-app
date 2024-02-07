@@ -36,12 +36,12 @@
         </ul>
       </div>
       <div class="d-none d-md-block">
-        <ul class="wd-navigation">
+        <ul class="wd-navigation collapse multi-collapse" id="courseNavBar">
           <!-- Copy Course Navigation Here -->
           <ul class="wd-navigation">
-            <li>
-              <a href="/Kanbas/Dashboard/screen.html">Home</a></li>
             <li class="wd-active">
+              <a href="/Kanbas/Dashboard/screen.html">Home</a></li>
+            <li>
               <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
             </li>
             <li><a href="http://piazza.com">Piazza</a></li>
@@ -56,10 +56,75 @@
         </ul>
       </div>
       <div class="flex-fill">
+        <div class="d-md-none" style="background-color: black; display: flex; justify-content: space-between;">
+            <i class="fa fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseNavBar" aria-expanded="false" aria-controls="multiCollapseNavBar" style="color:white; padding: 10px; padding-top: 14px;" ></i>
+            <div><h5 style="color: white;">CS1234.1234.1223</h5><h5 style="color: white;">CS1234.1234.1223</h5></div>
+            <i class="fa fa-chevron-down" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseCoursesBar" aria-expanded="false" aria-controls="multiCollapseCoursesBar" style="color:white; padding: 10px; padding-top: 14px;" ></i>
+          </div>
+          <div class="d-md-none collapse multi-collapse module-list" id="multiCollapseNavBar">
+            <ul class="wd-kanbas-navigation">
+              <!-- Copy Kanbas Navigation Here -->
+              <ul class="wd-mobile-kanbas-navigation">
+                <li><a href="http://northeastern.edu">N</a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i></i>Account</a></li>
+                <li>
+                  <a href="/Kanbas/Dashboard/screen.html">
+                    <i class="fa fa-tachometer"></i> Dashboard</a
+                  >
+                </li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+                </li>
+                <li><a href="#"><i class="fa fa-inbox"></i>Inbox</a></li>
+                <li><a href="#"><i class="fa fa-clock-o"></i>History</a></li>
+                <li><a href="#"><i class="fa fa-tv"></i>Studio</a></li>
+                <li><a href="#"><i class="fa fa-arrow-right"></i>Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="d-md-none collapse multi-collapse module-list" id="multiCollapseCoursesBar">
+            <ul class="wd-kanbas-navigation">
+              <!-- Copy Kanbas Navigation Here -->
+              <ul class="wd-mobile-kanbas-navigation">
+                <li class="wd-active">
+                  <a href="/Kanbas/Dashboard/screen.html">Home</a></li>
+                <li>
+                  <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                </li>
+                <li><a href="http://piazza.com">Piazza</a></li>
+                <li><a href="#">Zoom</a></li>
+                <li>
+                  <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+              </ul>
+            </ul>
+          </div>
+        <!-- Using Dividers from Bootstrap for Navigation Breadcrumbs https://getbootstrap.com/docs/5.3/components/breadcrumb/#example -->
+        <div class="d-none d-md-block">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li><span type="button" data-bs-toggle="collapse" data-bs-target="#courseNavBar" aria-expanded="false" aria-controls="courseNavBar"><i class="fa fa-bars" style="color:crimson; padding: 10px; padding-top: 14px;" ></i></span></li>
+            <li class="breadcrumb-item" style="padding: 10px;"><a href="/Kanbas/Courses/Modules/screen.html" style="color:crimson">Class Name</a></li>
+            <li class="breadcrumb-item active" aria-current="page" style="padding: 10px;">Modules</li>
+          </ol>
+        </nav>
+      </div>
         <ul class="list-group wd-modules">
+          <span class="module-button-set" style="display:flex; justify-content:flex-end; gap:10px">
+            <button type="button" data-bs-toggle="collapse" data-bs-target=".module-list" aria-expanded="false" aria-controls="multiCollapseWeek1 multiCollapseWeek2">Collapse All</button>
+            <button>View Progress</button>
+            <button> <i class="fa fa-check-circle"></i> Publish All</button>
+            <button style="background-color: crimson; color:white">+ Module</button>
+            <button><i class="fa fa-ellipsis-v ms-2"></i></button>
+          </span>
           <!-- Copy Course Home here -->
     <!-- <ul class="list-group wd-modules"> -->
-      <li class="list-group-item">
+      <li class="list-group-item" style="background-color: white;">
         <div>
           <!-- Used Collapse functionality as suggested in Piazza: https://piazza.com/class/lqlwl9wn2q969r/post/269 -->
           <!-- Used Bootstrap Collapse for the tables: https://getbootstrap.com/docs/5.3/components/collapse/ -->
@@ -70,7 +135,7 @@
             <i class="fa fa-ellipsis-v ms-2"></i>
           </span>
         </div>
-        <div class="collapse multi-collapse" id="multiCollapseWeek1">
+        <div class="collapse multi-collapse module-list" id="multiCollapseWeek1">
         <ul class="list-group">
           <li class="list-group-item">
             <i class="fa fa-ellipsis-v"></i> Learning Objectives
@@ -130,7 +195,7 @@
           </li>
         </ul>
       </li>
-      <li class="list-group-item">
+      <li class="list-group-item module-list" style="background-color: white;">
         <div>
           <i class="fa fa-ellipsis-v"></i><span type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseWeek2" aria-expanded="false" aria-controls="multiCollapseWeek2">Week 2</span>
           <span class="float-end">
@@ -139,7 +204,7 @@
             <i class="fa fa-ellipsis-v ms-2"></i>
           </span>
         </div>
-        <div class="collapse multi-collapse" id="multiCollapseWeek2">
+        <div class="collapse multi-collapse module-list" id="multiCollapseWeek2">
           <ul class="list-group">
             <li class="list-group-item">
               <i class="fa fa-ellipsis-v"></i> Learning Objectives
@@ -200,18 +265,18 @@
           </ul>
         </li>
       </div>
-      </div>
       </li>
         </ul>
-      </div>
       <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
         <h3>Course Status</h3>
           <!-- Implement Course Status here -->
-    <button type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseWeek1 multiCollapseWeek2">Collapse All</button>
-    <button>View Progress</button>
-    <button>Publish All</button>
-    <button>+ Module</button>
+          <button type="button" data-bs-toggle="collapse" data-bs-target=".module-list" aria-expanded="false" aria-controls="multiCollapseWeek1 multiCollapseWeek2">Collapse All</button>
+          <button>View Progress</button>
+          <button> <i class="fa fa-check-circle"></i> Publish All</button>
+          <button style="background-color: crimson; color:white">+ Module</button>
       </div>
+    </div>
+  </div>
     </div>
   </body>
 </html>
