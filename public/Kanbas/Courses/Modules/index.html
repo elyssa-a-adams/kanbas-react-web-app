@@ -1,29 +1,159 @@
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
   <body>
-    <button>Collapse All</button>
+    <!-- Implement buttons Collapse All, View Progress, etc. here -->
+    <button type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseWeek1 multiCollapseWeek2">Collapse All</button>
     <button>View Progress</button>
-    <button>Add Modules</button>
-    <select>
-      <option>Publish All</option>
-      <option>Publish All Modules and Items</option>
-      <option>Publish Modules Only</option>
-      <option>Unpublish All</option>
-    </select>
-    <ul>
-      <li>
-        Week 1
-        <ul>
-          <li>Learning Objectives</li>
-          <li>Introduction to the course</li>
-          <li>Learn what is Web Development</li>
+    <button>Publish All</button>
+    <button>+ Module</button>
+    <ul class="list-group wd-modules">
+      <li class="list-group-item">
+        <div>
+          <!-- Used Collapse functionality as suggested in Piazza: https://piazza.com/class/lqlwl9wn2q969r/post/269 -->
+          <!-- Used Bootstrap Collapse for the tables: https://getbootstrap.com/docs/5.3/components/collapse/ -->
+          <i class="fa fa-ellipsis-v"></i><span type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseWeek1" aria-expanded="false" aria-controls="multiCollapseWeek1">Week 0 - Intro</span>
+          <span class="float-end">
+            <i class="fa fa-check-circle text-success"></i>
+            <i class="fa fa-plus ms-2"></i>
+            <i class="fa fa-ellipsis-v ms-2"></i>
+          </span>
+        </div>
+        <div class="collapse multi-collapse" id="multiCollapseWeek1">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> Learning Objectives
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> Introduction to the course
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> Learn what is Web Development
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> READING
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> Chapter 1
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> Chapter 2
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> SLIDES
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> Slides 1
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </li>
         </ul>
       </li>
-      <li>
-        Week 2
-        <ul>
-          <li>Learning Objectives</li>
-        </ul>
+    </div>
+      <li class="list-group-item">
+        <div>
+          <i class="fa fa-ellipsis-v"></i><span type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseWeek2" aria-expanded="false" aria-controls="multiCollapseWeek2">Week 2</span>
+          <span class="float-end">
+            <i class="fa fa-check-circle text-success"></i>
+            <i class="fa fa-plus ms-2"></i>
+            <i class="fa fa-ellipsis-v ms-2"></i>
+          </span>
+        </div>
+        <div class="collapse multi-collapse" id="multiCollapseWeek2">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> Learning Objectives
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> Introduction to the course
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> Learn what is Web Development
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> READING
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> Chapter 1
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> Chapter 2
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> SLIDES
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-ellipsis-v"></i> Slides 1
+              <span class="float-end">
+                <i class="fa fa-check-circle text-success"></i>
+                <i class="fa fa-ellipsis-v ms-2"></i>
+              </span>
+            </li>
+          </ul>
+        </li>
+      </div>
       </li>
     </ul>
   </body>
