@@ -1,0 +1,11 @@
+[
+    { "_id": "A101", "title": "How to Bark", "course": "DOG101" },
+    { "_id": "A102", "title": "How to Beg", "course": "DOG101" },
+    { "_id": "A103", "title": "How to Roll Over", "course": "DOG101" },
+    { "_id": "A201", "title": "How to Swim", "course": "SWIM102" },
+    { "_id": "A202", "title": "How to Float", "course": "SWIM102" },
+    { "_id": "A203", "title": "How to Tread Water", "course": "SWIM102" },
+    { "_id": "A301", "title": "How to Plant Seeds", "course": "GD103" },
+    { "_id": "A302", "title": "How to Water Plants", "course": "GD103" },
+    { "_id": "A303", "title": "Sun Training", "course": "GD103" }
+  ]
