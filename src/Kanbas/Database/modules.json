@@ -52,32 +52,6 @@
       ]
     },
     {
-      "_id": "M103",
-      "name": "Nozzle Design",
-      "description": "Principles of rocket nozzle design and performance optimization.",
-      "course": "RS101",
-      "lessons": [
-        {
-          "_id": "L301",
-          "name": "Nozzle Design",
-          "description": "Overview of different types of rocket nozzles.",
-          "module": "M103"
-        },
-        {
-          "_id": "L302",
-          "name": "Nozzle Performance",
-          "description": "Understanding nozzle performance and efficiency.",
-          "module": "M103"
-        },
-        {
-          "_id": "L303",
-          "name": "Nozzle Optimization",
-          "description": "Optimizing nozzle design for specific applications.",
-          "module": "M103"
-        }
-      ]
-    },
-    {
       "_id": "M201",
       "name": "Fundamentals of Swimming",
       "description": "Basic aerodynamic concepts and fluid dynamics principles.",
@@ -126,6 +100,58 @@
           "name": "Lake",
           "description": "Understanding swimming in lakes.",
           "module": "GD103"
+        }
+      ]
+    },
+    {
+      "_id": "M201",
+      "name": "Fundamentals of Swimming",
+      "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+      "course": "SWIM102",
+      "lessons": [
+        {
+          "_id": "M202",
+          "name": "Water Flow",
+          "description": "Understanding water behaviors.",
+          "module": "SWIM102"
+        },
+        {
+          "_id": "M203",
+          "name": "Swimming Basics",
+          "description": "Study of the basics of swimming.",
+          "module": "SWIM102"
+        },
+        {
+          "_id": "M301",
+          "name": "Swimming Structural Design",
+          "description": "Fundamentals of designing swimming structures and floaties selection.",
+          "module": "GD103"
+        }
+      ]
+    },
+    {
+      "_id": "M302",
+      "name": "Gardening Mechanics",
+      "description": "Understanding gardening dynamics and garden planning.",
+      "course": "GD103",
+      "lessons": [
+        {
+          "_id": "M202",
+          "name": "Flowers",
+          "description": "Understanding the types of flowers to garden.",
+          "module": "GD102"
+        },
+        {
+          "_id": "M203",
+          "name": "Vegetable Garden",
+          "description": "Growing your own tomatoes.",
+          "module": "GD102"
+        },
+        {
+          "_id": "M301",
+          "name": "Hydroponics",
+          "description": "Growing plants in water.",
+          "module": "GD102"
         }
       ]
     }
