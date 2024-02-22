@@ -10,11 +10,25 @@ function ModuleList() {
   return (
     <>
       {/* <!-- Add buttons here --> */}
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target=".multi-collapse"
+        aria-expanded="false"
+        aria-controls="multiCollapseWeek1 multiCollapseWeek2"
+      >
+        Collapse All
+      </button>
+      <button>View Progress</button>
+      <button>Publish All</button>
+      <button>+ Module</button>
       <ul className="list-group wd-modules">
-        {modulesList.map((module) => (
+        {modulesList.map((module, index) => (
           <li
+            key={index}
             className="list-group-item"
-            onClick={() => setSelectedModule(module)}>
+            onClick={() => setSelectedModule(module)}
+          >
             <div>
               <FaEllipsisV className="me-2" />
               {module.name}
@@ -26,8 +40,8 @@ function ModuleList() {
             </div>
             {selectedModule._id === module._id && (
               <ul className="list-group">
-                {module.lessons?.map((lesson) => (
-                  <li className="list-group-item">
+                {module.lessons?.map((lesson, index) => (
+                  <li className="list-group-item" key={index}>
                     <FaEllipsisV className="me-2" />
                     {lesson.name}
                     <span className="float-end">

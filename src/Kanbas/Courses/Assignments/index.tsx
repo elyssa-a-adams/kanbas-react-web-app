@@ -9,6 +9,12 @@ function Assignments() {
   return (
     <>
       {/* {<!-- Add buttons and other fields here -->} */}
+      <button>+ Group</button>
+      <button>+ Assignment</button>
+      <select>
+        <option>Edit Assignment Dates</option>
+        <option>Edit Final</option>
+      </select>
       <ul className="list-group wd-modules">
         <li className="list-group-item">
           <div>
