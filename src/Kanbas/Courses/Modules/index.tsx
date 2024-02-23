@@ -2,7 +2,7 @@ import ModuleList from "./List";
 import "./index.css";
 function Modules() {
   return (
-      <ModuleList />
+      <ModuleList pageType="Modules"/>
   );
 }
 export default Modules;

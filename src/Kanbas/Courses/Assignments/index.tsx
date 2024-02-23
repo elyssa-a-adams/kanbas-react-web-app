@@ -2,12 +2,15 @@ import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
+import Breadcrumb from "../../Breadcrumb";
 function Assignments() {
   const { courseId } = useParams();
   const assignmentList = assignments.filter(
     (assignment) => assignment.course === courseId);
+    const courseDefault = courseId || "Course";
   return (
     <>
+    <Breadcrumb courseName={courseDefault} pageType="Assignments" />
       {/* {<!-- Add buttons and other fields here -->} */}
       <button>+ Group</button>
       <button>+ Assignment</button>

@@ -4,7 +4,7 @@ import "./index.css";
 function Home() {
   return (
     <div className="home-page">
-      <ModuleList />
+      <ModuleList pageType="Home"/>
       <div>
       <button>Import Existing Content</button>
             <br />

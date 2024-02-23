@@ -14,7 +14,6 @@ function Courses() {
   const course = courses.find((course) => course._id === courseId);
   return (
     <div className="page">
-      {/* <h1 style={{paddingLeft: 20}}><HiMiniBars3 /> {course?.name}</h1> */}
       <CourseNavigation />
         <div className="overflow-y-scroll" style={{flex: 1}}>
           <Routes>
