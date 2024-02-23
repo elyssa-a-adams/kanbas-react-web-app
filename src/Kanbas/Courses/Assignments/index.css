@@ -60,4 +60,9 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    margin-right: 5px;;
+  }
+
+  .assignment-list {
+    margin-right: 20px;
   }

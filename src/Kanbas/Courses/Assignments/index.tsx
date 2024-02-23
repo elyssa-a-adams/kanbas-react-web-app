@@ -2,6 +2,7 @@ import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
+import "./index.css";
 import Breadcrumb from "../../Breadcrumb";
 function Assignments() {
   const { courseId } = useParams();
@@ -10,6 +11,7 @@ function Assignments() {
     const courseDefault = courseId || "Course";
   return (
     <>
+    <div className="assignment-list">
     <Breadcrumb courseName={courseDefault} pageType="Assignments" />
       <div className="button-group">
       <button>+ Group</button>
@@ -40,6 +42,7 @@ function Assignments() {
           </ul>
         </li>
       </ul>
+      </div>
     </>
 );}
 export default Assignments;
