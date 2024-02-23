@@ -9,7 +9,8 @@ function ModuleList() {
   const [selectedModule, setSelectedModule] = useState(modulesList[0]);
   return (
     <>
-      {/* <!-- Add buttons here --> */}
+      <div className="modules-column" >
+      <div className="button-group">
       <button
         type="button"
         data-bs-toggle="collapse"
@@ -21,15 +22,16 @@ function ModuleList() {
       </button>
       <button>View Progress</button>
       <button>Publish All</button>
-      <button>+ Module</button>
-      <ul className="list-group wd-modules">
+      <button style={{background: "red", color: "white"}}>+ Module</button>
+      </div>
+      <ul className="list-group wd-modules" style={{display: "flex"}}>
         {modulesList.map((module, index) => (
           <li
             key={index}
             className="list-group-item"
             onClick={() => setSelectedModule(module)}
           >
-            <div>
+            <div style={{display: "flex"}}>
               <FaEllipsisV className="me-2" />
               {module.name}
               <span className="float-end">
@@ -39,7 +41,7 @@ function ModuleList() {
               </span>
             </div>
             {selectedModule._id === module._id && (
-              <ul className="list-group">
+              <ul className="list-group" style={{display: "flex"}}>
                 {module.lessons?.map((lesson, index) => (
                   <li className="list-group-item" key={index}>
                     <FaEllipsisV className="me-2" />
@@ -55,6 +57,7 @@ function ModuleList() {
           </li>
         ))}
       </ul>
+      </div>
     </>
   );
 }
