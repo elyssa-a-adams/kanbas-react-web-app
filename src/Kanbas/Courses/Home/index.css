@@ -35,4 +35,9 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 55px;
+    gap: 5px;
+  }
+
+  .individual-button {
+    margin-right: 10px;
   }
