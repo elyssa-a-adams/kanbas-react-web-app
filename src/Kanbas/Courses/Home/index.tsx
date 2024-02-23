@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home-page">
       <ModuleList pageType="Home"/>
-      <div>
+      <div className="home-buttons">
       <button>Import Existing Content</button>
             <br />
             <button>Import From Commons</button>

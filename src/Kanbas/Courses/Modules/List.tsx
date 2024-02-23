@@ -12,7 +12,7 @@ export default function ModuleList({ pageType }: { pageType: string}) {
   return (
     <>
       <div className="modules-column">
-      <Breadcrumb courseName={courseDefault} pageType="Modules" />
+      <Breadcrumb courseName={courseDefault} pageType={pageType} />
         <div className="button-group">
           <button
             type="button"
