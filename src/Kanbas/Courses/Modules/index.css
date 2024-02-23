@@ -36,3 +36,9 @@
   gap: 10px;
   padding: 10px;
 }
+
+.modules-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

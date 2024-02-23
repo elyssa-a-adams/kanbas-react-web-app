@@ -9,7 +9,7 @@ function ModuleList() {
   const [selectedModule, setSelectedModule] = useState(modulesList[0]);
   return (
     <>
-      <div className="modules-column" >
+      <div className="modules-column">
       <div className="button-group">
       <button
         type="button"
@@ -24,7 +24,7 @@ function ModuleList() {
       <button>Publish All</button>
       <button style={{background: "red", color: "white"}}>+ Module</button>
       </div>
-      <ul className="list-group wd-modules" style={{display: "flex"}}>
+      <ul className="list-group wd-modules">
         {modulesList.map((module, index) => (
           <li
             key={index}

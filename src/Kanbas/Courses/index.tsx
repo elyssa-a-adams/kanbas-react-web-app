@@ -13,12 +13,10 @@ function Courses() {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (
-    <div style={{display: "flex"}}>
+    <div className="page">
       {/* <h1 style={{paddingLeft: 20}}><HiMiniBars3 /> {course?.name}</h1> */}
-      <div className="page">
       <CourseNavigation />
-      <div style={{display: "flex"}}>
-        <div className="overflow-y-scroll" style={{display: "flex"}}>
+        <div className="overflow-y-scroll" style={{flex: 1}}>
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />
@@ -28,8 +26,6 @@ function Courses() {
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>
-      </div>
-    </div>
     </div>
 );}
 
