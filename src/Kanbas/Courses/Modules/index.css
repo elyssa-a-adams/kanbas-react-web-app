@@ -49,3 +49,8 @@
   justify-content: flex-end;
   gap: 10px;
 }
+
+.module-icons {
+  display: flex;
+  justify-content: flex-end;
+}

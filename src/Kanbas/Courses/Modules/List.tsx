@@ -36,8 +36,7 @@ export default function ModuleList({ pageType }: { pageType: string}) {
               className="list-group-item"
               onClick={() => setSelectedModule(module)}
             >
-              <div style={{ display: "flex" }}>
-                <FaEllipsisV className="me-2" />
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
                 {module.name}
                 <span className="float-end">
                   <FaCheckCircle className="text-success" />
