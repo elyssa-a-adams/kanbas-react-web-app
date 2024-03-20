@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./index.css";
+import "../../Navigation/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaInbox, FaTv, FaClock, FaArrowCircleRight, FaQuestionCircle } from "react-icons/fa";
-function KanbasNavigation() {
+import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaInbox, FaTv, FaClock, FaArrowCircleRight, FaQuestionCircle, FaBars } from "react-icons/fa";
+function KanbasMobileNavigation() {
+  const [visible, setVisible] = useState(false);
   const links = [
     { label: "Account",   icon: <FaRegUserCircle className="fs-2" />  },
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />  },
@@ -17,11 +19,15 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
   return (
     <div>
-    <head>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
     <div>
-    <ul className="wd-kanbas-navigation d-none d-sm-block">
+    </div>
+    <div className="d-sm-none" style={{ backgroundColor: "black", display: "flex", justifyContent: "space-between" }}>
+      <button onClick={() => {setVisible(!visible)}} data-bs-toggle="collapse" data-bs-target="#multiCollapseNavBar" aria-expanded="false" aria-controls="multiCollapseNavBar" style={{color: "white", paddingBlock: 10, paddingTop: 14, background: "black"}}><FaBars className="fs-2" /></button>
+        <div><h3 style={{color: "white"}}>Dashboard</h3></div>
+       <h3></h3>
+    </div>
+    <div className="d-sm-none" style={{display: visible ? 'block' : 'none' }}>
+        <ul className="wd-kanbas-navigation">
       {links.map((link, index) => (
         <li key={index} className={pathname.includes(link.label) ? "wd-active" : ""}>
           <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label} </Link>
@@ -32,4 +38,4 @@ function KanbasNavigation() {
     </div>
   );
 }
-export default KanbasNavigation;
+export default KanbasMobileNavigation;

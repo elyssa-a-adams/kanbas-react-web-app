@@ -12,22 +12,51 @@
 
 .wd-modules > li {
   background-color: lightgray;
-  border: 1px solid lightgray !important;
+  border: 1px solid gray !important;
   border-left: none !important;
 }
 
 .wd-modules > li > div {
   padding: 6px;
-  border-left: 1px solid lightgray !important;
+  border-left: 1px solid gray !important;
 }
 
 .wd-modules > li > ul > li {
   padding: 5px;
-  border-top: 1px solid lightgray !important;
+  border-top: 1px solid gray !important;
   border-left: 2px solid green;
 }
 
 .wd-modules > li {
   margin-bottom: 20px;
   background: white;
+}
+
+.modules-page {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.modules-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.module-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-modules {
+  display: flex;
+  flex-direction: column;
 }

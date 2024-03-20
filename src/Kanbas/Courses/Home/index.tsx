@@ -8,16 +8,15 @@ function Home() {
       <ModuleList pageType="Home"/>
       <div className="home-buttons">
       <button className="btn btn-primary"
-              style={{ background: "buttonface", margin: "10px", color: "black", border: "black" }}> <FaFileImport className="fs-2 individual-button" />Import Existing Content</button>  
-<button className="btn btn-primary"
-              style={{ background: "buttonface", margin: "10px", color: "black", border: "black" }}><FaChartBar className="fs-2 individual-button" /> Import From Commons</button> 
-<button className="btn btn-primary"
-              style={{ background: "buttonface", margin: "10px", color: "black", border: "black" }}><FaCircleNotch className="fs-2 individual-button" /> Choose Home Page</button> 
-<button className="btn btn-primary"
-              style={{ background: "buttonface", margin: "10px", color: "black", border: "black" }}><FaChartBar className="fs-2 individual-button" /> View Course Stream</button> 
-<button className="btn btn-primary"
-              style={{ background: "buttonface", margin: "10px", color: "black", border: "black" }}><FaMicrophone className="fs-2 individual-button" />New Announcement</button>
-
+        style={{ background: "grey", color: "black", border: "1px", margin: "10px" }}> <FaFileImport className="fs-2 individual-button" />Import Existing Content</button>
+            <button className="btn btn-primary"
+        style={{ background: "grey", color: "black",  border: "1px", margin: "10px" }}> <FaChartBar className="fs-2 individual-button" /> Import From Commons</button>
+            <button className="btn btn-primary"
+        style={{ background: "grey", color: "black",  border: "1px", margin: "10px" }}><FaCircleNotch className="fs-2 individual-button" /> Choose Home Page</button>
+            <button className="btn btn-primary"
+        style={{ background: "grey", color: "black",  border: "1px", margin: "10px" }}><FaChartBar className="fs-2 individual-button" /> View Course Stream</button>
+            <button className="btn btn-primary"
+        style={{ background: "grey", color: "black",  border: "1px", margin: "10px" }}><FaMicrophone className="fs-2 individual-button" />New Announcement</button>
             </div>
     </div>
   );
