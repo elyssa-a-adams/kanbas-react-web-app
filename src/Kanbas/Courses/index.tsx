@@ -1,12 +1,11 @@
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./Navigation";
-import { courses } from "../Database";
 import { HiMiniBars3 } from "react-icons/hi2";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import "./index.css";
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (
@@ -15,7 +14,7 @@ function Courses() {
       <div className="page">
       <CourseNavigation />
       <div className="courses">
-        <div className="overflow-y-scroll position-fixed">
+        <div className="overflow-y-scroll">
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />

@@ -23,4 +23,18 @@
     color: red;
     text-decoration: none;
   }
+
+  .home-page {
+    display: flex;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    margin-left: 20px;
+  }
   
+  .home-button-stack {
+    background: "buttonface";
+    margin: "10px";
+    color: "black";
+  }
